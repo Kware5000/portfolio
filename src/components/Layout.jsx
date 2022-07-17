@@ -53,7 +53,7 @@ const Layout = ({atomLink, allColors, Logo, Social, Skills, Work, Bottom, }) => 
         <div>
             <TopLinks>
                 <LogoComponent click={Logo || allColors}/>
-                <Home to='/test' click={allColors}>Main</Home>
+                <Home to='/test/' click={allColors}>Main</Home>
             </TopLinks>
             <SocialIcons click={allColors || Social}/>
             <SkillsLink to='/skills' click={allColors || Skills}>
