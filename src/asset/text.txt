@@ -1,0 +1,58 @@
+
+nothing is true, everything is permitted
+nothing is valid, everything is suseptible to change
+
+Front Page Left Column {
+
+    Large vertical text (possibly bold) {
+        CODE YOU CAN RELY ON 
+    },
+
+    
+
+
+}
+
+Works Page {
+    background: gray particles
+    Cards: {
+        Turning animatiion: {
+            Front: diagnal color pics, technologies, title, turn on hover
+            Back: Site Video/GIF (screenrecord), buttons to visit and view code
+
+        }
+    }
+}
+Contact page{
+    //two halfs, contact form half and a map image with a transparent card with nonform contact
+    contact info: {
+        Number, Resume page link with a resume download, email
+    }
+}
+
+Skills{
+    video background,
+    card
+    core tech: {
+
+    }
+    Others: {
+
+    }
+}
+
+Contact {
+    rightSide: purple form
+    LeftSide: purple or purple blue map of tn with contact info
+}
+
+About {
+    particle effect background,
+    yellow radial bordered div card with (scientist or infj) svg and self description
+
+     {
+        Hey, I'm Kent 
+        I make beautiful 
+        websites that strive to serve the needs of each client
+    }
+}

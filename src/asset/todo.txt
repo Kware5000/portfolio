@@ -1,0 +1,26 @@
+//card background shadow
+//find good green atom svg
+//add green atom
+//rotate green atom
+//place green atom
+//place white social icons
+//place white nav links
+//place white logo
+//efficiently place data for buttons and button description
+//loop or map over the button and dynamically create different data
+//place flex div for Skills
+//re-style the buttons
+//watch more vid on card flip animation
+//implement card flip
+//create hover animation
+
+
+
+about me text
+redux, styled-components, next.js, and chakraui text
+switch all social icons to svg instead of png
+save to flash drive
+responsivity
+upload to github
+upload to vercel
+view from different screen sizes
