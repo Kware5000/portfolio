@@ -8,12 +8,14 @@ const VideoBackground = ({src}) => {
             height: 100%;
             object-fit: cover;
             position: absolute;
+            overflow: hidden;
         `
         
 
         const Overlay = styled.div`
         width: 100%;
         height: 100%;
+        overflow: hidden;
         position: absolute;
         background-color: #0000005c;
         backdrop-filter: blur(3px);

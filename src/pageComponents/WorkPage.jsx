@@ -8,6 +8,7 @@ import ProjectCardComponent from '../components/ProjectCardComponent'
 const MainComponent = styled.div`
     justify-content: center;
     align-items: center;
+    position: relative;
     height: 100vh;
     width: 100vw;
     overflow: hidden;

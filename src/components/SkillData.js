@@ -35,25 +35,25 @@ export const SkillData = [
     },
     {
         name: 'Redux',
-        Description: 'state management',
+        Description: 'Redux is a JavaScript library for managing and centralizing application state and is most commonly used with libraries such as React or Angular for building user interface',
         Icon: ReduxIcon,
         Color: 'linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);'
     },
     {
         name: 'Next.JS',
-        Description: 'Router Components',
+        Description: 'Next.js is a web development framework built on top of Node.js enabling React-based web applications functionalities such as server-side rendering and generating static websites',
         Icon: NJSIcon,
         Color: 'linear-gradient(315deg, #e7eff9 0%, #cfd6e6 74%);'
     },
     {
         name: 'Styled-Components',
-        Description: 'pretty components maker',
+        Description: 'Styled-components is a popular library that is used to style React applications by allowing you to build custom components by writing actual CSS in your JavaScript',
         Icon: StCIcon,
         Color: 'linear-gradient(315deg, #eec0c6 0%, #e58c8a 74%);'
     },
     {
         name: 'ChakraUI',
-        Description: 'lots of components and pretty colors',
+        Description: 'Chakra UI is a simple, modular and accessible component library that gives you the building blocks you need to build your React applications',
         Icon: CUIIcon,
         Color: 'linear-gradient(315deg, #7cffcb 0%, #74f2ce 74%);'
     },

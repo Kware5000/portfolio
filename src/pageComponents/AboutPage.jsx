@@ -44,6 +44,8 @@ const MainComponent = styled.div`
     display: flex;
     height: 100vh;
     overflow: hidden;
+    position: relative;
+
     width: 100vw;
     background-color: #34495e;
         h2, h3, h4, h5, h6 {
@@ -93,7 +95,11 @@ const AboutPage = () => {
                 <BlackDiv/>
                 <Avatar src={Man} alt="hi" height={300} width={300}/>
                 <YellowBox>
-                    <h3>I make beautiful websites that strive <br/> to serve the needs of each client</h3>
+                    <h3>I make beautiful websites that strive <br/> to serve the needs of each client.
+                    I consider <br/> myself a very structured and focused person <br/> with  a passion for problem solving. I try to put<br/> as 
+                    much thought and effort into any and <br/> everything I do.
+
+</h3>
                 </YellowBox>
             </MainComponent>
             

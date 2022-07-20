@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import Me from '../asset/me.png'
 import { motion } from 'framer-motion'
+import devices from "./Devices"
 
 
 
@@ -14,7 +15,6 @@ const Intro = () => {
     top: 77%;
     padding-left: 22.47%;
     display: flex;
-    
 
 
        
@@ -36,6 +36,29 @@ const Underline = styled(motion.div)`
             right: 55%;
             font-weight: 400;
             white-space: nowrap;
+            @media ${devices.laptop} { 
+
+                font-size: 4rem;
+            }
+            @media ${devices.tablet} { 
+
+                font-size: 2rem;
+                bottom: 35vh;
+                right: 45%;
+                }
+                @media ${devices.mobileL} { 
+        
+                    font-size: 1.5rem;
+                    right: 55%;
+
+                }
+                @media ${devices.mobileL} { 
+        
+                    font-size: 1.2rem;
+                    right: 55%;
+                    bottom: 40vh;
+
+                }
 
         }
         &:before {
@@ -46,14 +69,32 @@ const Underline = styled(motion.div)`
                 width: 50%;
                 bottom: -2px;
                 left: 0;
+                @media ${devices.tablet}{
+                    background: #000;
+                }
         }
         .pic {
         position: absolute;
         left: 70%;
         top: 110%;
-        width: 60%;
+        width: 450px;
         height: auto;
         transform: translate(-50%, -99.5%);
+        z-index: 200;
+
+        @media ${devices.tablet} { 
+
+            width: 260px;
+            height: auto;
+
+            }
+        @media ${devices.mobileL} { 
+            left: 45%;
+            top: 7px;
+            width: 180px;
+            height: auto;
+
+            }
     }
 `
 return (

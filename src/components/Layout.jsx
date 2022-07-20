@@ -19,12 +19,12 @@ to {
 
 const AtomDiv = styled.div`
     position: absolute;
-    z-index: 1;
     top: 72%;
     left: 87%;
+
     &>:first-child{
-    animation: ${rotate} infinite 2.3s linear;
-    padding: 1rem;
+        animation: ${rotate} infinite 2.3s linear;
+        padding: 1rem;
     }
 
 `

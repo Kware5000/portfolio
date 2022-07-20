@@ -5,6 +5,7 @@ import Github from '../asset/github.png'
 import LinkedIn from '../asset/LinkedIn.png'
 import Gmail from '../asset/gmail.png'
 import Resume from '../asset/resume.png'
+import devices from "./Devices"
 
 const Icons = styled.div`
     display: flex;
@@ -15,13 +16,21 @@ const Icons = styled.div`
     left: 2rem;
     z-index: 3;
     filter: ${props => props.click ? 'invert()': 'none'};
-    
+    @media ${devices.tablet}{
+        filter: none
+        
+
+    }
 `
 const Line = styled.span`
     width: 2px;
     height: 7rem;
     //remember, theme is coming from ThemeProvider in App.js
     background-color: #000;
+    @media ${devices.tablet}{
+        height: 2rem;
+        filter: black;
+    }
 
 `
 

@@ -1,8 +1,18 @@
+import devices from "./Devices"
+import styled from "styled-components"
 
-const Atom= ({onClick, width, height, src}) => {
+const Image = styled.img`
+    @media ${devices.tablet}{
+        width: ${props => props.smWidth}
+    }
+    @media ${devices.mobileL}{
+        width: ${props => `calc(${props.smWidth} - 19px)` }
+    }
+`
+const Atom= ({onClick, width, height, src, smWidth}) => {
     return (
 
-        <img onClick={onClick} src={src} alt='Atom' width={width} height={height}/>
+        <Image onClick={onClick} src={src} alt='Atom' width={width} smWidth={smWidth} height={height}/>
 
     )
 }

@@ -7,6 +7,7 @@ import AtomSVG from '../asset/atom.svg'
 import { useState } from "react"
 import Intro from "../components/Intro"
 import Watermark from '../components/Watermark'
+import devices from "../components/Devices"
 
 const MainContainer = styled.div`
     background: #ecf0f1;
@@ -14,17 +15,19 @@ const MainContainer = styled.div`
     height: 100vh;
     overflow: hidden;
     position: relative;
+    z-index: 0;
 
     h2, h3, h4, h5, h6 {
         font-family: 'Karla', sans-serif;
         font-weight: 500;
     }
+    
 `
 const Container = styled.div`
     padding: 2rem;
 `
 export const SkillsLink = styled(NavLink)`
-    color: ${props => props.click ? props.theme.body : props.theme.text};
+    
     position: absolute;
     top: 50%;
     right: calc(1rem + 2vw);
@@ -33,6 +36,16 @@ export const SkillsLink = styled(NavLink)`
     z-index: 1;    
     font-size: 18px;
     font-family: 'Karla', sans-serif;
+    color: black;
+    @media ${devices.tablet} {
+        color: ${props => props.click ? props.theme.body : props.theme.text};
+    }
+    @media ${devices.mobileL} { 
+        
+        font-size: 15px;
+    
+    }
+    
 `
 export const WorkLink = styled(NavLink)`
     color: ${props => props.click ? props.theme.body : props.theme.text};
@@ -44,6 +57,14 @@ export const WorkLink = styled(NavLink)`
     z-index: 1;    
     font-size: 18px;
     font-family: 'Karla', sans-serif;
+    @media ${devices.tablet}{
+        color: ${props => props.smColor}
+    }
+    @media ${devices.mobileL} { 
+        
+        font-size: 15px;
+    
+    }
 `
 export const BottomLinks = styled.div`
     position: absolute;
@@ -54,16 +75,27 @@ export const BottomLinks = styled.div`
     display: flex;
     justify-content: space-evenly;
     font-size: 20px;
+    @media ${devices.mobileL} { 
+        
+        font-size: 15px;
+    
+    }
 `
 export const ContactLink = styled(NavLink)`
     color: ${props => props.click ? props.theme.body : props.theme.text};
     text-decoration: none;
     z-index: 1;    
+    @media ${devices.tablet}{
+        color: ${props => props.smColor}
+    }
 `
 export const AboutLink = styled(NavLink)`
     color: ${props => props.click ? props.theme.body : props.theme.text};
     text-decoration: none;
     z-index: 1;
+    @media ${devices.tablet}{
+        color: ${props => props.smColor}
+    }
 `
 const rotate = keyframes`
     from {
@@ -105,6 +137,13 @@ const RedDiv = styled.div`
     width: ${props => props.click ? '50%' : '0%'};
     transition: height 0.5s ease, width 1s ease 0.5s;
     z-index: 1;
+    @media ${devices.tablet}{
+        height: ${props => props.click ? '310px' : '0%'};
+        width: ${props => props.click ? '100%' : '0%'};
+        right: 0%;
+        z-index: -1;
+
+    }
 `
 
 export const Main = () => {
@@ -119,10 +158,10 @@ export const Main = () => {
                 <RedDiv click={click}/>
 
                 <StartButton click={click}>
-                    <Atom  src={AtomSVG} onClick={()=> handleClick()} width={click ? 120 : 150}/>
+                    <Atom  src={AtomSVG} onClick={()=> handleClick()} width={click ? 120 : 150} smWidth={click ? "70px" : "100px"}/>
                     <span>Click Here!</span>
                 </StartButton>
-                <SkillsLink to="/skills">
+                <SkillsLink to="/skills" click={click} smColor="white">
                     <h3>
                         Skills
                     </h3>
@@ -133,7 +172,7 @@ export const Main = () => {
                     </h3>
                 </WorkLink>
                 <BottomLinks>
-                    <ContactLink to='/contact' click={click}>
+                    <ContactLink to='/contact' click={click} smColor="black">
                         Contact
                     </ContactLink>
                     <AboutLink to='/about'>
@@ -142,8 +181,8 @@ export const Main = () => {
                 </BottomLinks>
             </Container>
             {click ? <Intro/> : null}
-            <Watermark text='Kent' top='3%' left='55%' />
-            <Watermark text='Ware' top='30%' left='65%'/>
+            <Watermark text='Kent' top='3%' left='55%' smTop='15%'  smLeft='55%' click={click}/>
+            <Watermark text='Ware' top='30%' left='65%' smTop='25%'  smLeft='66%' click={click}/>
 
         </MainContainer>
     )

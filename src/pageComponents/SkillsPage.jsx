@@ -18,6 +18,10 @@ const MainComponent = styled.div`
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
     
         h2, h3, h4, h5, h6 {
         font-family: 'Karla', sans-serif;
