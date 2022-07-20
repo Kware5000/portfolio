@@ -61,7 +61,7 @@ const Layout = ({atomLink, allColors, Logo, Social, Skills, Work, Bottom, }) => 
                     Skills
                 </h3>
             </SkillsLink>
-            <WorkLink to='/test' click={allColors || Work}>
+            <WorkLink to='/works' click={allColors || Work}>
                 <h3>
                     Works
                 </h3>
