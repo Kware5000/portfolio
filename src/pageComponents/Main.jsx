@@ -36,7 +36,7 @@ export const SkillsLink = styled(NavLink)`
     z-index: 1;    
     font-size: 18px;
     font-family: 'Karla', sans-serif;
-    color: black;
+    color: ${props => props.firstPage ? 'black' : 'white'};
     @media ${devices.tablet} {
         color: ${props => props.click ? props.theme.body : props.theme.text};
     }
@@ -154,14 +154,14 @@ export const Main = () => {
         <MainContainer>
             <Container>
                 <LogoComponent click={click}/>
-                <SocialIcons click={click}/>
+                <SocialIcons click={click} filter={'none'}/>
                 <RedDiv click={click}/>
 
                 <StartButton click={click}>
                     <Atom  src={AtomSVG} onClick={()=> handleClick()} width={click ? 120 : 150} smWidth={click ? "70px" : "100px"}/>
                     <span>Click Here!</span>
                 </StartButton>
-                <SkillsLink to="/skills" click={click} smColor="white">
+                <SkillsLink to="/skills" click={click} smColor="white" firstPage={true}>
                     <h3>
                         Skills
                     </h3>

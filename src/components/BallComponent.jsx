@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components"
-
+import devices from "./Devices"
 const bounce = keyframes`
     from {
         transform: translateX(0px);
@@ -25,7 +25,10 @@ const Ball = styled.div`
     background-color: white;
     box-shadow: 0 0 40px 15px #e5e8eb;
     animation: ${bounce} 1s ease-in 0s infinite alternate;
-
+    @media ${devices.tablet} {
+        height: 25px;
+        width: 25px;
+    }
 `
 const MainContainer = styled.div`
     animation: ${bounceA} 680ms linear 0s infinite alternate;

@@ -1,14 +1,17 @@
 import styled from "styled-components"
+import devices from "./Devices"
 const MainContainer = styled.div`
     height: 100%;
     width: 100%;
 `
 const Blue = styled.div`
     width: 100%;
-    height: 55%;
+    height: 390px;
     background: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
-    fill: red;
 
+    @media ${devices.desktop} {
+        height: 800px;
+    }
 
 
 `
@@ -16,6 +19,18 @@ const Wave = styled.div`
     fill: #34495e;
     padding-top: 200px;
     width: 1900px;
+    @media ${devices.desktop} {
+        padding-top: 400px;
+        width: 6000px;
+    }
+    @media ${devices.tablet} {
+        padding-top: 270px;
+        width: 1200px;
+    }
+    @media ${devices.mobileL} {
+        padding-top: 350px;
+        width: 590px;
+    }
     
 `
 

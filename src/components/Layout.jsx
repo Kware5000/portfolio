@@ -4,6 +4,7 @@ import SocialIcons from "../components/SocialIcons"
 import LogoComponent from "../components/LogoComponent"
 import { ContactLink, AboutLink, WorkLink, SkillsLink, BottomLinks } from "../pageComponents/Main"
 import { NavLink } from "react-router-dom"
+import devices from "./Devices"
 
 
 
@@ -26,6 +27,14 @@ const AtomDiv = styled.div`
         animation: ${rotate} infinite 2.3s linear;
         padding: 1rem;
     }
+    @media ${devices.laptop} {
+        top: 66%;
+        left: 85%;
+    }
+    @media ${devices.mobileL} {
+        top: 66%;
+        left: 78%;
+    }
 
 `
 const Home = styled(NavLink)`
@@ -36,6 +45,10 @@ const Home = styled(NavLink)`
     margin-top: 1%;
     font-family: 'Pacifico', cursive;
     font-size: 29px;
+    @media ${devices.mobileL} {
+        font-size: 20px;
+        margin-top: 5.5%;
+    }
 
 `
 const TopLinks = styled.div`
@@ -77,7 +90,7 @@ const Layout = ({atomLink, allColors, Logo, Social, Skills, Work, Bottom, }) => 
             </BottomLinks>
             
             <AtomDiv>
-                <Atom src={atomLink} width={150} height={150}/>
+                <Atom src={atomLink} width={150} height={150} smWidth='70px'/>
             </AtomDiv> 
         </div>
     )

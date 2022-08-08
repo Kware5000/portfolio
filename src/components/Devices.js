@@ -6,7 +6,8 @@ const widths = {
     tablet: '768px',
     laptop: '1024px',
     laptopL: '1440px',
-    desktop: '2560px'
+    desktop: '2560px',
+    desktopL: '4000px'
   }
   
 const devices = {
@@ -16,8 +17,8 @@ const devices = {
     tablet: `(max-width: ${widths.tablet})`,
     laptop: `(max-width: ${widths.laptop})`,
     laptopL: `(max-width: ${widths.laptopL})`,
-    desktop: `(max-width: ${widths.desktop})`,
-    desktopL: `(max-width: ${widths.desktop})`
+    desktop: `(min-width: ${widths.desktop})`,
+    desktopL: `(max-width: ${widths.desktopL})`
   };
 
   export default devices
@@ -26,7 +27,29 @@ const devices = {
   
 //example below
 
-//   @media ${device.laptop} { 
+//   @media ${devices.mobileS} { 
+//       max-width: 800px;
+//     }
+//   @media ${devices.mobileM} { 
+//       max-width: 800px;
+//     }
+//   @media ${devices.mobileL} { 
+//       max-width: 800px;
+//     }
+//   @media ${devices.tablet} { 
+//       max-width: 800px;
+//     }
+//   @media ${devices.laptop} { 
+//       max-width: 800px;
+//     }
+//   @media ${devices.laptopL} { 
+//       max-width: 800px;
+//     }
+  
+  //   @media ${devices.desktop} { 
+//       max-width: 800px;
+//     }
+//   @media ${devices.desktopL} { 
 //       max-width: 800px;
 //     }
   

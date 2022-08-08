@@ -59,7 +59,7 @@ export const SkillData = [
     },
     {
         name: 'MaterialUI',
-        Description: 'MaterialUI is a framework that assembles your typographical elements together into a design language and provides a theming engine, components, combines user interfaces into a common design paradigm',
+        Description: 'MaterialUI is a framework that provides a theming engine, components, combines user interfaces into a common design paradigm',
         Icon: MUIIcon,
         Color: 'linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);'
     },

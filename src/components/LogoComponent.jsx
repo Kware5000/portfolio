@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom"
 import styled from "styled-components"
-
+import devices from "./Devices"
 
 const LogoComponent = ({click}) => {
     
@@ -14,7 +14,9 @@ const LogoComponent = ({click}) => {
         left: 2rem;
         top: 2rem;
         z-index: 3;
-
+    @media ${devices.mobileL} {
+        font-size: 20px;
+    }
 
     `
 

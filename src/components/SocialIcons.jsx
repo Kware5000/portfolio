@@ -17,7 +17,7 @@ const Icons = styled.div`
     z-index: 3;
     filter: ${props => props.click ? 'invert()': 'none'};
     @media ${devices.tablet}{
-        filter: none
+        filter: ${props => props.filter}
         
 
     }
@@ -29,19 +29,19 @@ const Line = styled.span`
     background-color: #000;
     @media ${devices.tablet}{
         height: 2rem;
-        filter: black;
+        filter: ${props => props.filter}
     }
 
 `
 
 
         
-const SocialIcons = ({click}) => {
+const SocialIcons = ({click, filter }) => {
     return (
-        <Icons click={click}>
+        <Icons click={click} filter={filter}>
            
             <div>
-                <NavLink target='_blank' to={{pathname:"https://github.com"}}>
+                <NavLink target='_blank' to={{pathname:"https://github.com/Kware5000"}}>
                     <PNGcomponent src={Github}  alt='Github'/>
                 </NavLink>
             </div>
@@ -62,7 +62,7 @@ const SocialIcons = ({click}) => {
 
                 </NavLink>
             </div>
-            <Line click={click} />
+            <Line click={click}  filter={filter}/>
         </Icons>
         
     )
