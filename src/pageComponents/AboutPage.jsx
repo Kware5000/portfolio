@@ -40,6 +40,12 @@ const YellowDiv = styled.div`
         word-spacing: 1px;
 
     }
+    @media ${devices.laptop} { 
+        font-size: 50px;
+        word-spacing: 1px;
+        margin-right: 160px;
+
+    }
     @media ${devices.mobileL} { 
         right: 335px;
         top: 70px;
