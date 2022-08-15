@@ -7,7 +7,6 @@ import SkillsPage from "./pageComponents/SkillsPage";
 import AboutPage from "./pageComponents/AboutPage";
 import WorkPage from "./pageComponents/WorkPage";
 import ContactPage from "./pageComponents/ContactPage";
-import MetaTags from "react-meta-tags"
 
 
 function App() {
