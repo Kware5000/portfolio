@@ -7,11 +7,13 @@ import SkillsPage from "./pageComponents/SkillsPage";
 import AboutPage from "./pageComponents/AboutPage";
 import WorkPage from "./pageComponents/WorkPage";
 import ContactPage from "./pageComponents/ContactPage";
+import MetaTags from "react-meta-tags"
 
 
 function App() {
   return (
     <>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <GlobalStyle/>
       <ThemeProvider theme={lightTheme}>
         <Switch>
@@ -22,6 +24,7 @@ function App() {
           <Route exact path='/contact' component={ContactPage}/>
         </Switch> 
       </ThemeProvider>
+      </meta>
     </>
   );
 }
