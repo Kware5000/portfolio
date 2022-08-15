@@ -15,7 +15,7 @@ const YellowDiv = styled.div`
   height: 700px;
   background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
 
-  width: 2560px;
+  width: 1460px;
   position: absolute;
   top: 1px;
   @media ${devices.laptopL} { 
