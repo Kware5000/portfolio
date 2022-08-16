@@ -1,10 +1,13 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.5b53feb8.css",
-    "main.js": "/portfolio/static/js/main.a7e618d6.js",
+    "main.js": "/portfolio/static/js/main.fd179a7c.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/video.mp4": "/portfolio/static/media/video.bae57a09a0221682a3c6.mp4",
+    "static/media/realestate.jpg": "/portfolio/static/media/realestate.dcf321766dd1f04d9fbe.jpg",
     "static/media/me.png": "/portfolio/static/media/me.a35cc29ddb75104e8430.png",
+    "static/media/candles.jpg": "/portfolio/static/media/candles.525a9d55948818c0115d.jpg",
+    "static/media/portfolio.jpg": "/portfolio/static/media/portfolio.31b6d9a26639ca34f865.jpg",
     "static/media/greenatom.svg": "/portfolio/static/media/greenatom.e10aa87f2bc8567104772eb54ce04b77.svg",
     "static/media/atom.svg": "/portfolio/static/media/atom.5dce7629837511c857b513e7a87e6af2.svg",
     "static/media/BlackManInYellow.svg": "/portfolio/static/media/BlackManInYellow.9c9a23d4a5ffab98d3d3fb6b5e33b663.svg",
@@ -23,11 +26,11 @@
     "static/media/CSSLogo2.svg": "/portfolio/static/media/CSSLogo2.0c9f596bff9dff838e47520204c9e55f.svg",
     "static/media/gmail.svg": "/portfolio/static/media/gmail.31c2fd385c743fec63ebee12dc884db5.svg",
     "main.5b53feb8.css.map": "/portfolio/static/css/main.5b53feb8.css.map",
-    "main.a7e618d6.js.map": "/portfolio/static/js/main.a7e618d6.js.map",
+    "main.fd179a7c.js.map": "/portfolio/static/js/main.fd179a7c.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5b53feb8.css",
-    "static/js/main.a7e618d6.js"
+    "static/js/main.fd179a7c.js"
   ]
 }
