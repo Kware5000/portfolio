@@ -21,7 +21,7 @@ const LogoComponent = ({click}) => {
     `
 
     return (
-        <NavLink to='/test'>
+        <NavLink to='/portfolio'>
             <Logo>
                 KW
             </Logo>
