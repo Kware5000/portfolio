@@ -177,7 +177,7 @@ const ProjectCardComponent = () => {
             <LinkButtons>
               <Button
                 target="_blank"
-                to={{ pathname: "https://github.com/Kware5000" }}
+                to={{ pathname: "https://kware5000.github.io/portfolio/" }}
               >
                 Demo
               </Button>
@@ -205,13 +205,13 @@ const ProjectCardComponent = () => {
             <LinkButtons>
               <Button
                 target="_blank"
-                to={{ pathname: "https://github.com/Kware5000" }}
+                to={{ pathname: "https://skylinerealty.vercel.app/" }}
               >
                 Demo
               </Button>
               <Button
                 target="_blank"
-                to={{ pathname: "https://github.com/Kware5000" }}
+                to={{ pathname: "https://github.com/Kware5000/skylinerealty" }}
               >
                 Github
               </Button>
